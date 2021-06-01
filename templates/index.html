@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}OrgoChem Agricultural Consultancy
+{% endblock title %}
+{% block body %}
+  <img class="index" src="https://www.fertilizerseurope.com/wp-content/uploads/2019/08/banner-picture-fertilizer-regulation-1024x457.jpg" height="400px" width="104%">
+{% endblock body %}
+{% block content %}
+  <p class="mx-4"><h5 class="h5 mx-4">OrgoChem Agricultural Consultancy Services (OACS) Inc. collects data and consults with farmers to help them grow better crops and navigate complex and changing environmental regulations.
+We help farmers optimize soil fertility, identify and control pests, and manage the land to minimize erosion and nutrient losses. OACS believes in farming, science-based decision making, and that each of us makes a difference for farmers today and for future generations.</h5></p>
+      <div class="link-box">
+          {%for n in na%}
+            <div class="contain"><b>{{n.name}}</b></div>
+          {%endfor%}
+      </div>
+ 
+  {% endblock content %}

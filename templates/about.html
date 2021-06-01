@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}About Us
+{% endblock title %}
+{% block body %}This is About Us Body
+{% endblock body %}
+{% block add %}
+<form action="add" method="post">
+    {% csrf_token %}
+    Enter number 1: <input type="text" name="n1"><br>
+    Enter number 2: <input type="text" name="n2"><br>
+    <input type="submit" value="submit">
+
+</form>
+{% endblock add %}
